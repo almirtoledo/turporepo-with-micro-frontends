@@ -1,0 +1,25 @@
+services:
+  ex-dash:
+    build:
+      context: .
+      dockerfile: ./apps/ex-dash/Dockerfile
+    environment:
+      - PUBLIC_EX_PRODUCTS_URL=ex-products:3000
+    ports:
+      - 8080:3000
+    networks:
+      - local
+
+  ex-products:
+    depends_on:
+      - ex-dash
+    build:
+      context: .
+      dockerfile: ./apps/ex-products/Dockerfile
+    expose:
+      - 3000
+    networks:
+      - local
+
+networks:
+  local:

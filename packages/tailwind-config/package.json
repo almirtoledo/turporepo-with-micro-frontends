@@ -1,0 +1,12 @@
+{
+  "name": "@repo/tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./globals": "./globals.css"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.0-beta.5",
+    "tailwindcss": "^4.0.0-beta.5"
+  }
+}

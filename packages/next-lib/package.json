@@ -1,0 +1,18 @@
+{
+  "name": "@repo/next-lib",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./create-session": "./src/create-session.ts",
+    "./get-session": "./src/get-session.ts",
+    "./exclude-session": "./src/exclude-session.ts"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.0-beta.5",
+    "next": "^15.0.4",
+    "tailwindcss": "^4.0.0-beta.5"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*"
+  }
+}
