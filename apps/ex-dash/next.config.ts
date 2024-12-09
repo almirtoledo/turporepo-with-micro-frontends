@@ -7,19 +7,17 @@ const nextConfig = {
     return [
       {
         source: '/products',
-        destination: `${process.env.PUBLIC_EX_PRODUCTS_URL}/products`,
+        destination: `http://172.23.255.130:3010/products`,
       },
       {
         source: '/products-static/_next/:path+',
-        destination: `${process.env.PUBLIC_EX_PRODUCTS_URL}/products-static/_next/:path+`,
+        destination: `http://172.23.255.130:3010/products-static/_next/:path+`,
       },
     ];
   },
   transpilePackages: ['@repo/ui', '@repo/tailwind-config', '@repo/next-lib'],
   output: 'standalone',
-  experimental: {
-    outputFileTracingRoot: path.join(cwd(), '../../'),
-  },
+  outputFileTracingRoot: path.join(cwd(), '../../'),
 };
 
 export default nextConfig;

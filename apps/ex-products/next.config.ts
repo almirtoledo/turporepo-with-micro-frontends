@@ -7,10 +7,7 @@ const nextConfig = {
   assetPrefix: '/products-static',
   transpilePackages: ['@repo/ui', '@repo/tailwind-config', '@repo/next-lib'],
   output: 'standalone',
-  experimental: {
-    outputFileTracingRoot: path.join(cwd(), '../../'),
-
-  },
+  outputFileTracingRoot: path.join(cwd(), '../../'),
 } as NextConfig
 
 export default nextConfig;

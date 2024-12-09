@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
+    "./postcss": "./postcss.config.mjs",
     "./globals": "./globals.css"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.0.0-beta.5",
+    "@tailwindcss/postcss": "^4.0.0-beta.6",
     "tailwindcss": "^4.0.0-beta.5"
   }
 }

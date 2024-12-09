@@ -1,8 +1,5 @@
 FROM node:18-alpine AS base
 
-ARG PUBLIC_EX_PRODUCTS_URL
-ENV PUBLIC_EX_PRODUCTS_URL=$PUBLIC_EX_PRODUCTS_URL
-
 FROM base AS builder
 RUN apk update
 RUN apk add --no-cache libc6-compat
